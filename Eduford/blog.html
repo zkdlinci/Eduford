@@ -1,0 +1,121 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Eduford</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <section class="sub-header">
+        <nav>
+            <a href="index.html"><img src="img/logo.png" alt="logo"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">ANA SAYFA</a></li>
+                    <li><a href="about.html">HAKKIMIZDA</a></li>
+                    <li><a href="course.html">KURSLAR</a></li>
+                    <li><a href="blog.html">BLOG</a></li>
+                    <li><a href="contact.html">İLETİŞİM</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <h1>2022 İçin Online <br> Sertifika Programlarımız</h1>
+    </section>
+    <!--blog sayfası--->
+    <section class="blog-content">
+        <div class="row">
+            <div class="blog-left">
+                <img src="img/certificate.jpg">
+                <h2>2022 İçin Online Sertifika Programlarımız</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente veniam perferendis, inventore architecto magnam. Voluptate possimus praesentium velit qui veniam, repellat recusandae dolore repudiandae maiores dicta odio, eligendi molestiae fugiat inventore accusantium excepturi, repellendus ipsam.</p>
+                <br>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta blanditiis nisi repudiandae veritatis mollitia aspernatur voluptatum quasi, porro beatae eos nam temporibus pariatur dolore? Minus dignissimos dolorum, aliquam sunt repudiandae ad expedita, in quam maxime, distinctio enim laborum sequi corporis unde deserunt rem! Perspiciatis sunt, officia beatae. Ipsum, quidem, minus? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia, expedita, nulla rem nisi totam nobis rerum officia neque asperiores ipsam.</p>
+                <br>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur error sed quae dicta voluptas, id. Facere incidunt repellendus voluptates labore, quisquam ipsum cumque quaerat nisi eius pariatur? Fuga at aspernatur, delectus earum quam excepturi ea dignissimos illum? Officia, reiciendis velit. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime soluta quod nulla eveniet necessitatibus explicabo eos optio dolor ratione recusandae reiciendis labore officiis libero perspiciatis, pariatur non! Quo, ea, facere? Necessitatibus harum ex, quam adipisci. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet minus aliquid incidunt numquam tempora. Similique repellendus, id cupiditate aspernatur amet voluptatibus vitae facilis sit delectus itaque culpa doloremque, excepturi quod quidem recusandae eos nobis exercitationem, pariatur repudiandae molestias error? Architecto voluptatibus natus qui nesciunt esse, praesentium, vel ullam mollitia molestiae.</p>
+                <br>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam ipsa molestias veniam, temporibus ex veritatis dignissimos architecto atque, amet odit aliquam nesciunt sed hic non esse optio. Quisquam vel, sed.</p>
+                <div class="comment-box">
+                    <h3>Yorum Yapın</h3>
+                    <form class="comment-form">
+                        <input type="text" placeholder="Adınızı Giriniz">
+                        <input type="email" placeholder="E-Mailinizi Giriniz">
+                        <textarea rows="5" placeholder="Yorumunuz"></textarea>
+                        <button type="submit" class="hero-btn red-btn">Yorumu Gönder</button>
+                    </form>
+                </div>
+            </div>
+            <div class="blog-right">
+                <h3>Gönderi Kategorileri</h3>
+                <div>
+                    <span>İş Analitiği</span>
+                    <span>21</span>
+                </div>
+                <div>
+                    <span>Veri Bilimi</span>
+                    <span>28</span>
+                </div>
+                <div>
+                    <span>Makine Öğrenmesi</span>
+                    <span>15</span>
+                </div>
+                <div>
+                    <span>Bilgisayar Bilimi</span>
+                    <span>34</span>
+                </div>
+                <div>
+                    <span>AutoCAD</span>
+                    <span>42</span>
+                </div>
+                <div>
+                    <span>Gazetecilik</span>
+                    <span>22</span>
+                </div>
+                <div>
+                    <span>Ticaret</span>
+                    <span>30</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!--footer--->
+    <section class="footer">
+        <h4>Hakkımızda</h4>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi error eos ipsa nisi, accusantium debitis hic voluptatum sunt, <br> quae obcaecati cumque asperiores at voluptatem sapiente facere id iure.</p>
+        <div class="icons">
+            <i class="fa fa-facebook"></i>
+            <i class="fa fa-twitter"></i>
+            <i class="fa fa-instagram"></i>
+            <i class="fa fa-linkedin"></i>
+        </div>
+        <p>Made With <i class="fa fa-heart-o"></i> By Me</p>
+    </section>
+
+
+    <!--açılır menü için script--->
+    <script>
+        var navLinks = document.getElementById("navLinks");
+
+        function showMenu() {
+            navLinks.style.right = "0";
+        }
+
+        function hideMenu() {
+            navLinks.style.right = "-200px";
+        }
+    </script>
+</body></html>
+
+
